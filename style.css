@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(178, 149, 146, 0.421);
+}
+nav h2 {
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+}
+ul li a:hover {
+  color: aliceblue;
+}
+#rate {
+  margin-left: 90px;
+  font-size: large;
+  font-weight: bolder;
+}
+.item h4 {
+  text-align: center;
+}
+nav {
+  height: 60px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: orange;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ul1 {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+.ul2 {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.ul1 li a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.ul2 li a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  margin-left: 10px;
+  color: black;
+}
+.icon {
+  display: none;
+}
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.products {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.products button,
+.cart {
+  border: none;
+  background-color: orange;
+  border-radius: 10px;
+  height: 50px;
+  width: 130px;
+  font-size: larger;
+  font-weight: bolder;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.products button:hover {
+  color: aliceblue;
+}
+.cart:hover {
+  color: aliceblue;
+}
+.mobile {
+  margin: 10px 200px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.laptop {
+  margin: 10px 200px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.accessories {
+  margin: 10px 200px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.appliances {
+  margin: 10px 200px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item {
+  background-color: rgb(238, 172, 30);
+  height: auto;
+  width: auto;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 3px;
+}
+.item button {
+  margin: 10px 45px;
+  background-color: rgb(255, 255, 255);
+  font-size: medium;
+  border: none;
+  border-radius: 10px;
+  height: 20px;
+  width: 100px;
+  cursor: pointer;
+}
+.item img {
+  height: 300px;
+  width: 200px;
+  padding: 15px;
+  justify-content: center;
+  transition: 0.1s;
+  aspect-ratio: 1/1;
+}
+.item img:hover {
+  border-radius: 40px;
+  transform: scale(1.1);
+}
+.item button:hover {
+  background-color: rgba(178, 149, 146, 0.421);
+}
+.popup {
+  border-radius: 20px;
+  display: none;
+  height: auto;
+  width: 500px;
+  position: absolute;
+  top: 150px;
+  right: 500px;
+  background-color: rgb(231, 205, 157);
+  text-align: center;
+  z-index: 2;
+}
+.last {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.last button {
+  background-color: orange;
+  border: none;
+
+  height: 30px;
+  width: 100%;
+}
+.popupblack {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.cartitem {
+  margin: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  height: 100px;
+  display: flex;
+  width: auto;
+  background-color: aliceblue;
+  justify-content: space-between;
+}
+.cartitem img {
+  height: 100px;
+  width: 100px;
+  margin-left: 0;
+  border: none;
+}
+.cartitem p {
+  margin-top: 30px;
+  font-size: medium;
+  font-weight: bold;
+}
+.cartitem span {
+  margin-top: 30px;
+  font-size: medium;
+  font-weight: bold;
+}
+.cartitem button {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  margin-top: 30px;
+  font-size: larger;
+  font-weight: bold;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.cartitem button:hover {
+  color: tomato;
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .ul1 {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .products,
+  .section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .item img {
+    height: 200px;
+    width: 150px;
+  }
+
+  .item {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #rate {
+    margin-left: 0px;
+  }
+  .mobile,
+  .laptop,
+  .accessories,
+  .appliances {
+    margin: 10px 10px;
+  }
+
+  .popup {
+    width: 95%;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    transform: translateY(-50%);
+  }
+  .cartitem p {
+    margin-top: 30px;
+    font-size: small;
+    font-weight: bold;
+  }
+  .cartitem span {
+    margin-top: 30px;
+    font-size: small;
+    font-weight: bold;
+  }
+}
